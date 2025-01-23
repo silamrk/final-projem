@@ -1,0 +1,189 @@
+html{
+    background-color:black;
+    background-blend-mode: color-dodge;
+
+    h1{
+        padding-left: 630px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size:xx-large;
+        font-style:normal;
+        color:chartreuse
+        
+    }
+    h2{
+        padding-left:50px;
+        padding-right:50px;
+        font-family:'Courier New', Courier, monospace;
+    }
+    p{
+        padding-left:30px;
+        padding-right:30px;
+        font-size:x-large;
+        font-family:monospace;
+        color:chartreuse
+    }
+    
+}
+body {
+    margin: 0px;
+}
+
+    
+
+
+
+
+.iletisim {
+    background-color: chartreuse;
+    border-radius: 10%;
+    width: 30%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+}
+
+.iletisim  a{
+    display: block;
+}
+
+.iletisim img {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5%;
+}
+.behance button {
+    border: 7px solid;
+    border-color: chartreuse;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:larger;
+    padding: 1em;
+    
+}
+.behance-metin {
+    font-size:x-large;
+    text-align: center;
+
+}
+
+
+.iletisim button {
+	background-color:black;
+	border-radius:28px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color:chartreuse;
+    font-weight: bold;
+	font-family:'Courier New', Courier, monospace;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+    margin-bottom: 1.5rem;
+}
+.iletisim a :hover {
+	background-color:#5cbf2a;
+}
+.iletisim button:active {
+	position:relative;
+	top:1px;
+}
+
+.iletisim-baslik {
+    margin-top: 2rem;
+    color: chartreuse;
+    font-family:'Courier New', Courier, monospace;
+    size: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: chartreuse;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: none;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact-us {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    padding-bottom: 1px;
+   
+}
+
+.inner-contact-us {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: none;
+    margin-bottom: 1em;
+}
+
+.contact-us h3{
+    margin: 2rem 3rem;
+    width: auto;
+    display: block;
+    font-family: 'Century Gothic';
+    font-weight: bolder;
+    font-size: 2.5em;
+    padding-top: none;
+}
+
+.contact-us p {
+    display: flex;
+    
+}
+
+.contact-us iframe {
+    margin: 2rem;
+    width: 80%;
+    height: 20rem;
+    border: solid chartreuse (0, 0, 0, 0.479);
+    display: flex;
+}
+
+.contact-us-text {
+    align-items: center;
+    font-family: 'Century Gothic';
+    margin-bottom: 2em;
+
+}
+
+form {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #5cbf2a;
+    text-align: center;
+}
+
+table {
+    width: 400px;
+    height: 400px;
+    border: solid 1px chartreuse;
+    color: chartreuse;
+    font-size: x-large;
+    margin-left: 15em;
+    margin-right: 10em;
+    margin-top: none;
+}
+
+td {
+    border: 1px solid chartreuse;
+    text-align-last: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.baslik {
+    font-weight: bold;
+    font-size: 35px; 
+    text-align-last: center;
+   
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>İletişim Bilgileri</h1>
+
+
+    <div id="contact-us" class="contact-us">
+        
+        <div class="inner-contact-us">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21425.59346065501!2d29.009484434813277!3d41.10882569993983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab728fc42dd33%3A0x17d213078fb809f4!2zxLBzdGFuYnVsIE5pxZ9hbnRhxZ_EsSDDnG5pdmVyc2l0ZXNp!5e0!3m2!1str!2str!4v1735584770006!5m2!1str!2str" width="600" height="450" style="border: 5px solid  chartreuse;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-us-text">
+                <h4>Nişantaşı University</h4>
+                <p>Maslak Mahallesi, Taşyoncası Sokak, No: 1V ve No:1Y Bina Kodu: 34481742, 34398 Sarıyer/İstanbul</p>
+                <br>
+                <h4>Telefon:</h4>
+                <p>+123 456 789</p>
+                <br>
+                <h4>E-mail:</h4>
+                <p>nisantasi@edu.tr</p>
+            </div>
+        </div>
+    </div>
+    <table>
+        <tr class="baslik">
+            <td>İsim </td>
+            <td>Soyisim </td>
+            <td>E-mail</td>
+            <td>Telefon No</td>
+        
+        </tr>
+        
+        <tr> 
+            <td>Damla</td>
+            <td>Özşahin</td>
+            <td>damlaozsahın@gmail.com</td>
+            <td>5431231111</td>
+        </tr>
+    </table>
+    
+    
+
+
+
+
+    <h1>Bize Ulaşın</h1>
+
+    <form  method="POST">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required placeholder="Adınızı giriniz."><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required placeholder="Mail adresinizi giriniz."><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+
+        <button type ="submit">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            let isValid = true;
+            
+
+            // Clear previous error messages
+
+            document.getElementById("errorMessages").innerHTML = "";
+
+            let errors = [];
+
+
+            // Validate inputs
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+
+            // Validate name
+            if(name === "") {
+                errors.push("Name is required.");
+
+            }
+
+            // Validate email
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (email === "") {
+                errors.push("Email is required.");
+            } else if (!emailPattern.test(email)) {
+                errors.push("Please enter a valid email address.");
+            }
+            
+
+
+            // Validate Phone Number
+            if (phone === "") {
+                document.getElementById("phoneError").innerText = "Please enter a valid 10-digit phone number.";
+                isValid = false;
+            }
+
+            // Return errors
+            if (errors.length > 0) {
+                document.getElementById("errorMessages").innerHTML = errors.join("<br>");
+                return false;
+            }
+
+             // if there is no error
+             return true;
+             
+
+
+        }
+    </script>
+
+    <footer>
+        Copyright © 2025 Damla Özşahin
+    </footer>
+
+    
+</body>
+</html>
